@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Lista de Tareas</ion-title> <!-- Centramos el título -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container"> <!-- Usamos un div para centrar todo el contenido -->
+    <!-- Campo de entrada para nueva tarea -->
+    <ion-item class="input-item">
+      <ion-input placeholder="Nueva tarea" [(ngModel)]="nuevaTarea" class="input-centered"></ion-input>
+      <ion-button expand="block" (click)="agregarTarea()">Agregar</ion-button>
+    </ion-item>
+
+    <!-- Lista de tareas -->
+    <ion-list class="task-list">
+      <ion-item *ngFor="let tarea of tareas">
+        {{ tarea }}
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+

@@ -1,0 +1,36 @@
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para que el contenido sea legible */
+  border-radius: 10px; /* Opcional: Añadir bordes redondeados */
+}
+
+.input-item {
+  width: 100%;
+  max-width: 400px; /* Limitar el ancho en pantallas más grandes */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-centered {
+  flex-grow: 1; /* Para que el campo de entrada use todo el espacio disponible */
+  margin-right: 10px; /* Un pequeño margen entre el input y el botón */
+}
+
+.task-list {
+  width: 100%;
+  max-width: 400px; /* Limitar el ancho también para la lista */
+}
+
+ion-item {
+  --padding-start: 0; /* Quitar el padding extra a los ítems */
+}
